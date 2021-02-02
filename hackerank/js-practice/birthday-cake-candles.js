@@ -2,8 +2,7 @@
 // https://www.hackerrank.com/challenges/time-conversion/problem
 function birthdayCakeCandles(candles) {
     let numMaxCandles = 1;
-    // ciclo for para buscar el numero maximo
-    // IDEA: probar una funcion que se llama max
+   
     let numeroMasAlto = -1
     candles.forEach(element => {
         if (element > numeroMasAlto)
