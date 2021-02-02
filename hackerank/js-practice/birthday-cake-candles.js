@@ -4,7 +4,7 @@ function birthdayCakeCandles(candles) {
   // IDEA: probar una funcion que se llama max
   const numeroMasAlto = Math.max(...candles);
 
-  const result = candles.filter((numCandles) => numCandles == numeroMasAlto);
+  const result = candles.filter(numCandles => numCandles == numeroMasAlto);
   return result.length;
 }
 
