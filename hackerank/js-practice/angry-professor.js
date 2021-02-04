@@ -1,6 +1,7 @@
 "use strict";
 
 // Complete the angryProfessor function below.
+//https://www.hackerrank.com/challenges/angry-professor/problem
 
 const canceledClass = "YES";
 const notCanceledClass = "NO";
