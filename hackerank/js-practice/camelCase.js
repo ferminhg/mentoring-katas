@@ -8,4 +8,4 @@ function camelcaseString(s) {
 	return wordsNumber;
 }
 
-console.log(camelcase('saveChangesInTheEditor'));
+console.log(camelcaseString('saveChangesInTheEditor'));
