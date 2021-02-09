@@ -1,4 +1,4 @@
-function camelcaseString(s) {
+function camelCaseString(s) {
 	let wordsNumber = 1;
 	for (let i in s) {
 		if (s.charAt(i) === s.charAt(i).toUpperCase()) {
@@ -8,4 +8,4 @@ function camelcaseString(s) {
 	return wordsNumber;
 }
 
-console.log(camelcaseString('saveChangesInTheEditor'));
+console.log(camelCaseString('saveChangesInTheEditor'));
