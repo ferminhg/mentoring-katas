@@ -1,6 +1,6 @@
 function snakeCaseString(phrase) {
   const arrayOfWords = phrase.split("_");
-  const regex = /\S/;
+  const blankCharRegex = /\S/;
   const filterOnlyLetters = arrayOfWords.filter((item) => item.match(regex));
   return filterOnlyLetters.length;
 }
