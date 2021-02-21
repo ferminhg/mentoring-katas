@@ -14,4 +14,4 @@ function sockMerchant(n, ar) {
 
 	return pairs;
 }
-console.log(sockMerchant());
+//console.log(sockMerchant());
