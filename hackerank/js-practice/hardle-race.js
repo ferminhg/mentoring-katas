@@ -6,9 +6,8 @@ function hurdleRace(power, hurdleHeight) {
   const higherHurdle = Math.max(...hurdleHeight);
   if (higherHurdle <= power) {
     return 0;
-  } else {
-    return higherHurdle - power;
   }
+  return higherHurdle - power;
 }
 
 function checkResults(power, hurdleHeight, expectedResult, func) {
