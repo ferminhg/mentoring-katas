@@ -3,22 +3,28 @@ function timeConversion(string) {
   let oldTime = string.slice(0, 2);
   let newTime = parseInt(oldTime);
   if (containPM) {
-    newTime += 12;
-    newTime = newTime.toString();
-    if (newTime === "24") {
-      newTime = "12";
-    }
-    newTime = string.replace(oldTime, newTime);
-    return newTime.slice(0, string.length - 2);
+    return pmTimeConversion(oldTime, newTime, string);
   } else {
-    if (newTime === 12) {
-      newTime = "00";
-      newTime = string.replace(oldTime, newTime);
-      return newTime.slice(0, string.length - 2);
-    }
-    return string.slice(0, string.length - 2);
+    return amTimeConversion(oldTime, newTime, string);
   }
 }
+const pmTimeConversion = (oldTime, newTime, string) => {
+  newTime += 12;
+  newTime = newTime.toString();
+  if (newTime === "24") {
+    newTime = "12";
+  }
+  newTime = string.replace(oldTime, newTime);
+  return newTime.slice(0, string.length - 2);
+};
+const amTimeConversion = (oldTime, newTime, string) => {
+  if (newTime === 12) {
+    newTime = "00";
+    newTime = string.replace(oldTime, newTime);
+    return newTime.slice(0, string.length - 2);
+  }
+  return string.slice(0, string.length - 2);
+};
 function checkResults(timeConversion, expectedResult, func) {
   const newTime = func(timeConversion);
   if (newTime == expectedResult) {
