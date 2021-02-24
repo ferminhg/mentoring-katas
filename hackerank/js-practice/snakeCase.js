@@ -1,8 +1,10 @@
 function snakeCaseString(phrase) {
+
 	const arrayOfWords = phrase.split('_');
 	const blankCharRegex = /\S/;
 	const filterOnlyLetters = arrayOfWords.filter((item) => item.match(blankCharRegex));
 	return filterOnlyLetters.length;
+
 }
 
 function checkResults(camelString, expectedResult, func) {
